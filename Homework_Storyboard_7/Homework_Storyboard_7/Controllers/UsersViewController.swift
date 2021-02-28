@@ -16,7 +16,9 @@ class UsersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        pushController(storyboard: "Main", name: "UserInfoViewController")
+        let controller = getControllerFrom(storyboard: "Main", name: "UserInfoViewController") as! UserInfoViewController
+        controller.user = AppData.users[indexPath.row]
+        pushController(viewController: controller)
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

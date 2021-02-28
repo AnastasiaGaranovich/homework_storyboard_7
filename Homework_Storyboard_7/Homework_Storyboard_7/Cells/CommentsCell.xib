@@ -8,56 +8,67 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommentsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="102" id="r8D-SW-EKS" customClass="CommentsCell" customModule="Homework_Storyboard_7" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommentsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="r8D-SW-EKS" customClass="CommentsCell" customModule="Homework_Storyboard_7" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r8D-SW-EKS" id="Kdx-oZ-kdb">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FX-Ff-3aW">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FX-Ff-3aW">
                         <rect key="frame" x="20" y="9" width="45" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTk-sS-IPs">
-                        <rect key="frame" x="83" y="9" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTk-sS-IPs">
+                        <rect key="frame" x="83" y="9" width="311" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-Jo-qUh">
-                        <rect key="frame" x="20" y="36" width="41" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeo-Jo-qUh">
+                        <rect key="frame" x="20" y="35.5" width="41" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVz-k8-CFr">
-                        <rect key="frame" x="83" y="36" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="253" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVz-k8-CFr">
+                        <rect key="frame" x="83" y="35.5" width="311" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzU-SK-uUk">
-                        <rect key="frame" x="20" y="65" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzU-SK-uUk">
+                        <rect key="frame" x="20" y="64" width="374" height="109.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dTk-sS-IPs" firstAttribute="leading" secondItem="4FX-Ff-3aW" secondAttribute="trailing" constant="18" id="1Am-Nm-bth"/>
+                    <constraint firstItem="dTk-sS-IPs" firstAttribute="top" secondItem="Kdx-oZ-kdb" secondAttribute="top" constant="9" id="GDT-qg-nkP"/>
+                    <constraint firstItem="4FX-Ff-3aW" firstAttribute="leading" secondItem="Kdx-oZ-kdb" secondAttribute="leading" constant="20" symbolic="YES" id="III-tq-sxI"/>
+                    <constraint firstItem="4FX-Ff-3aW" firstAttribute="top" secondItem="Kdx-oZ-kdb" secondAttribute="top" constant="9" id="Idy-G5-MbD"/>
+                    <constraint firstItem="uVz-k8-CFr" firstAttribute="top" secondItem="dTk-sS-IPs" secondAttribute="bottom" constant="6" id="IxH-Sc-Yzs"/>
+                    <constraint firstItem="tzU-SK-uUk" firstAttribute="leading" secondItem="Kdx-oZ-kdb" secondAttribute="leadingMargin" id="Kxx-Yz-vIT"/>
+                    <constraint firstItem="Aeo-Jo-qUh" firstAttribute="top" secondItem="uVz-k8-CFr" secondAttribute="top" id="L7F-rh-z0O"/>
+                    <constraint firstItem="uVz-k8-CFr" firstAttribute="leading" secondItem="Aeo-Jo-qUh" secondAttribute="trailing" constant="22" id="R6x-3d-PA7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tzU-SK-uUk" secondAttribute="bottom" constant="5.5" id="Waf-rr-xsO"/>
+                    <constraint firstAttribute="trailing" secondItem="uVz-k8-CFr" secondAttribute="trailing" constant="20" symbolic="YES" id="bBS-if-tKU"/>
+                    <constraint firstItem="tzU-SK-uUk" firstAttribute="trailing" secondItem="Kdx-oZ-kdb" secondAttribute="trailingMargin" id="ea9-gu-fyU"/>
+                    <constraint firstAttribute="trailing" secondItem="dTk-sS-IPs" secondAttribute="trailing" constant="20" symbolic="YES" id="f69-Tq-5VN"/>
+                    <constraint firstItem="Aeo-Jo-qUh" firstAttribute="leading" secondItem="Kdx-oZ-kdb" secondAttribute="leading" constant="20" symbolic="YES" id="fyV-pq-EQU"/>
+                    <constraint firstItem="tzU-SK-uUk" firstAttribute="top" secondItem="uVz-k8-CFr" secondAttribute="bottom" constant="8" symbolic="YES" id="nUr-y5-KUH"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="commentLabel" destination="tzU-SK-uUk" id="lNn-yH-hhB"/>
                 <outlet property="emailLabel" destination="uVz-k8-CFr" id="1i0-hU-SH7"/>
                 <outlet property="nameLabel" destination="dTk-sS-IPs" id="jnK-0O-Jne"/>
             </connections>
-            <point key="canvasLocation" x="165.21739130434784" y="34.821428571428569"/>
+            <point key="canvasLocation" x="165.21739130434784" y="64.285714285714278"/>
         </tableViewCell>
     </objects>
 </document>

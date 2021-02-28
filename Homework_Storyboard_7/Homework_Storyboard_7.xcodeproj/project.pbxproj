@@ -27,8 +27,8 @@
 		5DE6D7F525EAB2E50044E46B /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D7F425EAB2E50044E46B /* CommentsCell.swift */; };
 		5DE6D7F925EAB5640044E46B /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D7F825EAB5640044E46B /* MainCell.swift */; };
 		5DE6D7FC25EABD720044E46B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D7FB25EABD720044E46B /* AppData.swift */; };
-		5DE6D7FF25EABF3F0044E46B /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D7FE25EABF3F0044E46B /* Posts.swift */; };
-		5DE6D80225EABF640044E46B /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D80125EABF640044E46B /* Comments.swift */; };
+		5DE6D7FF25EABF3F0044E46B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D7FE25EABF3F0044E46B /* Post.swift */; };
+		5DE6D80225EABF640044E46B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D80125EABF640044E46B /* Comment.swift */; };
 		5DE6D80525EAC2EA0044E46B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D80425EAC2EA0044E46B /* Utils.swift */; };
 		5DE6D80825EAC9B30044E46B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE6D80725EAC9B30044E46B /* Network.swift */; };
 /* End PBXBuildFile section */
@@ -56,8 +56,8 @@
 		5DE6D7F425EAB2E50044E46B /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
 		5DE6D7F825EAB5640044E46B /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		5DE6D7FB25EABD720044E46B /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		5DE6D7FE25EABF3F0044E46B /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
-		5DE6D80125EABF640044E46B /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		5DE6D7FE25EABF3F0044E46B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5DE6D80125EABF640044E46B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		5DE6D80425EAC2EA0044E46B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5DE6D80725EAC9B30044E46B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,8 +114,8 @@
 				5DE6D7CF25EAA4510044E46B /* Address.swift */,
 				5DE6D7CC25EAA3880044E46B /* User.swift */,
 				5DE6D7FB25EABD720044E46B /* AppData.swift */,
-				5DE6D7FE25EABF3F0044E46B /* Posts.swift */,
-				5DE6D80125EABF640044E46B /* Comments.swift */,
+				5DE6D7FE25EABF3F0044E46B /* Post.swift */,
+				5DE6D80125EABF640044E46B /* Comment.swift */,
 				5DE6D80725EAC9B30044E46B /* Network.swift */,
 			);
 			path = Model;
@@ -225,7 +225,7 @@
 				5DE6D7F225EAB2BD0044E46B /* UsersCell.swift in Sources */,
 				5DE6D7B925EA99AD0044E46B /* SceneDelegate.swift in Sources */,
 				5DE6D7E525EAAB7F0044E46B /* PostsViewController.swift in Sources */,
-				5DE6D80225EABF640044E46B /* Comments.swift in Sources */,
+				5DE6D80225EABF640044E46B /* Comment.swift in Sources */,
 				5DE6D7F925EAB5640044E46B /* MainCell.swift in Sources */,
 				5DE6D7E225EAAAB30044E46B /* UserInfoViewController.swift in Sources */,
 				5DE6D80525EAC2EA0044E46B /* Utils.swift in Sources */,
@@ -235,7 +235,7 @@
 				5DE6D7D325EAA6B60044E46B /* Company.swift in Sources */,
 				5DE6D7D625EAA73E0044E46B /* Geo.swift in Sources */,
 				5DE6D7FC25EABD720044E46B /* AppData.swift in Sources */,
-				5DE6D7FF25EABF3F0044E46B /* Posts.swift in Sources */,
+				5DE6D7FF25EABF3F0044E46B /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
