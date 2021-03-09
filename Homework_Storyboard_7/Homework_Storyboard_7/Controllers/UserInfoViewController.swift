@@ -14,9 +14,7 @@ class UserInfoViewController: UIViewController {
     @IBAction func postsButtonPressed(_ sender: UIButton) {
         Network.getPosts {
             let controller = self.getControllerFrom(storyboard: "Post", name: "PostsViewController") as! PostsViewController
-            controller.usersPosts = AppData.posts.filter { post in
-                return post.userId == self.user.id
-            }
+            controller.userId = self.user.id
             self.pushController(viewController: controller)
         }
     }

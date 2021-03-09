@@ -1,7 +1,13 @@
 import UIKit
 
 class PostsViewController: UITableViewController {
-    var usersPosts: [Post]!
+    var userId: Int!
+    
+    var usersPosts: [Post] {
+        AppData.posts.filter { post in
+            post.userId == userId
+        }
+    }
     
     @IBAction func addPostButtonPressed(_ sender: UIBarButtonItem) {
         pushController(storyboard: "Post", name: "AddPostViewController")
