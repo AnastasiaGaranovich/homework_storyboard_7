@@ -1,0 +1,5 @@
+target 'Homework_Storyboard_7' do
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'Kingfisher'
+end

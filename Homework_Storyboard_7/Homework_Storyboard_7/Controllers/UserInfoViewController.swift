@@ -3,7 +3,6 @@ import UIKit
 class UserInfoViewController: UIViewController {
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var postsButton: UIButton!
     
     var user: User!
     
@@ -14,9 +13,29 @@ class UserInfoViewController: UIViewController {
     
     @IBAction func postsButtonPressed(_ sender: UIButton) {
         Network.getPosts {
-            let controller = self.getControllerFrom(storyboard: "Main", name: "PostsViewController") as! PostsViewController
+            let controller = self.getControllerFrom(storyboard: "Post", name: "PostsViewController") as! PostsViewController
             controller.usersPosts = AppData.posts.filter { post in
                 return post.userId == self.user.id
+            }
+            self.pushController(viewController: controller)
+        }
+    }
+    
+    @IBAction func albumsButtonPressed(_ sender: UIButton) {
+        Network.getAlbums {
+            let controller = self.getControllerFrom(storyboard: "Album", name: "AlbumsViewController") as! AlbumsViewController
+            controller.albums = AppData.albums.filter { album in
+                return album.userId == self.user.id
+            }
+            self.pushController(viewController: controller)
+        }
+    }
+    
+    @IBAction func toDoButtonPressed(_ sender: Any) {
+        Network.getToDos {
+            let controller = self.getControllerFrom(storyboard: "ToDo", name: "ToDoViewController") as! ToDoViewController
+            controller.toDos = AppData.todos.filter { todo in
+                return todo.userId == self.user.id
             }
             self.pushController(viewController: controller)
         }

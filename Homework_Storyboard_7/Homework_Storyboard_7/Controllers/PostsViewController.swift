@@ -18,7 +18,7 @@ class PostsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Network.getComments {
-            let controller = self.getControllerFrom(storyboard: "Main", name: "CommentsViewController") as! CommentsViewController
+            let controller = self.getControllerFrom(storyboard: "Post", name: "CommentsViewController") as! CommentsViewController
             controller.comments = AppData.comments.filter { comment in
                 return comment.postId == self.usersPosts[indexPath.row].id
             }
