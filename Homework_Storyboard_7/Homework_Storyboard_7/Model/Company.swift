@@ -1,6 +1,6 @@
 import Foundation
 
-class Company: Decodable {
+class Company: Codable {
     var name: String
     var catchPhrase: String
     var bs: String

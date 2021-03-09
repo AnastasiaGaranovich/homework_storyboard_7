@@ -3,6 +3,10 @@ import UIKit
 class PostsViewController: UITableViewController {
     var usersPosts: [Post]!
     
+    @IBAction func addPostButtonPressed(_ sender: UIBarButtonItem) {
+        pushController(storyboard: "Post", name: "AddPostViewController")
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return usersPosts.count
     }

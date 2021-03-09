@@ -66,6 +66,9 @@
                     <navigationItem key="navigationItem" id="0YK-v5-RhB">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="g3A-FJ-0Uz">
                             <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="addPostButtonPressed:" destination="p2G-bV-Tf1" id="2eg-BA-ent"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -74,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1935" y="796"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Post View Controller-->
         <scene sceneID="0fm-Kr-Rxp">
             <objects>
-                <viewController id="hUS-mh-6mh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddPostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUS-mh-6mh" customClass="AddPostViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ys0-ja-eRb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +101,9 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="hUS-mh-6mh" eventType="touchUpInside" id="zU1-MU-dpj"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37Y-fr-JU5">
                                 <rect key="frame" x="20" y="59" width="374" height="34"/>
@@ -138,6 +144,10 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="bodyTextView" destination="NIu-nE-2B4" id="qMl-jU-lKV"/>
+                        <outlet property="titleLabel" destination="37Y-fr-JU5" id="2eV-cz-4Wg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUL-7w-HuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -34,9 +34,7 @@ class UserInfoViewController: UIViewController {
     @IBAction func toDoButtonPressed(_ sender: Any) {
         Network.getToDos {
             let controller = self.getControllerFrom(storyboard: "ToDo", name: "ToDoViewController") as! ToDoViewController
-            controller.toDos = AppData.todos.filter { todo in
-                return todo.userId == self.user.id
-            }
+            controller.userId = self.user.id
             self.pushController(viewController: controller)
         }
     }

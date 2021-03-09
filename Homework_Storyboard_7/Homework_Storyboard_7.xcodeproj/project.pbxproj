@@ -10,6 +10,10 @@
 		5D2EDEFC25F7CAB10074A14E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDEFB25F7CAB10074A14E /* AlbumsViewController.swift */; };
 		5D2EDEFF25F7CEAE0074A14E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDEFE25F7CEAE0074A14E /* PhotosViewController.swift */; };
 		5D2EDF0225F7CF810074A14E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDF0125F7CF810074A14E /* PhotoCell.swift */; };
+		5D2EDF1425F7DF060074A14E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDF1325F7DF060074A14E /* PhotoViewController.swift */; };
+		5D2EDF2B25F7E5080074A14E /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDF2A25F7E5080074A14E /* AddPostViewController.swift */; };
+		5D2EDF3325F7E6550074A14E /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDF3225F7E6550074A14E /* AddToDoViewController.swift */; };
+		5D2EDF3625F7E68A0074A14E /* ToDoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2EDF3525F7E68A0074A14E /* ToDoInfoViewController.swift */; };
 		5DC3CC0525F5368B0042E522 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3CC0425F5368B0042E522 /* Post.storyboard */; };
 		5DC3CC0825F536BA0042E522 /* Album.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3CC0725F536BA0042E522 /* Album.storyboard */; };
 		5DC3CC0C25F53A0B0042E522 /* ToDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC3CC0B25F53A0B0042E522 /* ToDo.storyboard */; };
@@ -49,6 +53,10 @@
 		5D2EDEFB25F7CAB10074A14E /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		5D2EDEFE25F7CEAE0074A14E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		5D2EDF0125F7CF810074A14E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		5D2EDF1325F7DF060074A14E /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		5D2EDF2A25F7E5080074A14E /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		5D2EDF3225F7E6550074A14E /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		5D2EDF3525F7E68A0074A14E /* ToDoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInfoViewController.swift; sourceTree = "<group>"; };
 		5DC3CC0425F5368B0042E522 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		5DC3CC0725F536BA0042E522 /* Album.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Album.storyboard; sourceTree = "<group>"; };
 		5DC3CC0B25F53A0B0042E522 /* ToDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDo.storyboard; sourceTree = "<group>"; };
@@ -189,6 +197,10 @@
 				5DC3CC2D25F7B6830042E522 /* ToDoViewController.swift */,
 				5D2EDEFB25F7CAB10074A14E /* AlbumsViewController.swift */,
 				5D2EDEFE25F7CEAE0074A14E /* PhotosViewController.swift */,
+				5D2EDF1325F7DF060074A14E /* PhotoViewController.swift */,
+				5D2EDF2A25F7E5080074A14E /* AddPostViewController.swift */,
+				5D2EDF3225F7E6550074A14E /* AddToDoViewController.swift */,
+				5D2EDF3525F7E68A0074A14E /* ToDoInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D2EDF3625F7E68A0074A14E /* ToDoInfoViewController.swift in Sources */,
 				5DC3CC1625F79FCC0042E522 /* Photo.swift in Sources */,
 				5DE6D7DC25EAA9270044E46B /* MainViewController.swift in Sources */,
 				5DE6D7CD25EAA3880044E46B /* User.swift in Sources */,
@@ -339,14 +352,17 @@
 				5DE6D7E525EAAB7F0044E46B /* PostsViewController.swift in Sources */,
 				5DE6D80225EABF640044E46B /* Comment.swift in Sources */,
 				5DE6D7F925EAB5640044E46B /* MainCell.swift in Sources */,
+				5D2EDF3325F7E6550074A14E /* AddToDoViewController.swift in Sources */,
 				5DE6D7E225EAAAB30044E46B /* UserInfoViewController.swift in Sources */,
 				5DC3CC2E25F7B6830042E522 /* ToDoViewController.swift in Sources */,
 				5DE6D80525EAC2EA0044E46B /* Utils.swift in Sources */,
 				5DE6D80825EAC9B30044E46B /* Network.swift in Sources */,
 				5DE6D7D025EAA4510044E46B /* Address.swift in Sources */,
+				5D2EDF2B25F7E5080074A14E /* AddPostViewController.swift in Sources */,
 				5DE6D7DF25EAA9790044E46B /* UsersViewController.swift in Sources */,
 				5DE6D7D325EAA6B60044E46B /* Company.swift in Sources */,
 				5DE6D7D625EAA73E0044E46B /* Geo.swift in Sources */,
+				5D2EDF1425F7DF060074A14E /* PhotoViewController.swift in Sources */,
 				5DE6D7FC25EABD720044E46B /* AppData.swift in Sources */,
 				5DE6D7FF25EABF3F0044E46B /* Post.swift in Sources */,
 				5DC3CC1325F79F620042E522 /* Album.swift in Sources */,

@@ -1,6 +1,6 @@
 import Foundation
 
-class ToDo: Decodable {
+class ToDo: Codable {
     var userId: Int
     var id: Int
     var title: String

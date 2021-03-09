@@ -2,16 +2,22 @@ import UIKit
 
 class ToDoViewController: UITableViewController {
     
-    var toDos: [ToDo]!
+    var userId: Int!
     
+    var todos: [ToDo] {
+        AppData.todos.filter { toDo in
+            toDo.userId == userId
+        }
+    }
+        
     var completedToDos: [ToDo] {
-        toDos.filter { toDo in
+        todos.filter { toDo in
             return toDo.completed == true
         }
     }
     
     var currentToDos: [ToDo] {
-        toDos.filter { toDo in
+        todos.filter { toDo in
             return toDo.completed == false
         }
     }
@@ -49,5 +55,22 @@ class ToDoViewController: UITableViewController {
             return completedToDos.count
         }
         return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = getControllerFrom(storyboard: "ToDo", name: "ToDoInfoViewController") as! ToDoInfoViewController
+        if indexPath.section == 0 {
+            controller.toDo = currentToDos[indexPath.row]
+        }
+        if indexPath.section == 1 {
+            controller.toDo = completedToDos[indexPath.row]
+        }
+        
+        pushController(viewController: controller)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 }

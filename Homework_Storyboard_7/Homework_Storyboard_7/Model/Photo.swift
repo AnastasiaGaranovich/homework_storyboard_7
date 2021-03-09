@@ -1,6 +1,6 @@
 import Foundation
 
-class Photo: Decodable {
+class Photo: Codable {
     var albumId: Int
     var id: Int
     var title: String

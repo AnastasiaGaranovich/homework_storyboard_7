@@ -1,6 +1,6 @@
 import Foundation
 
-class Post: Decodable {
+class Post: Codable {
     var userId: Int
     var id: Int
     var title: String

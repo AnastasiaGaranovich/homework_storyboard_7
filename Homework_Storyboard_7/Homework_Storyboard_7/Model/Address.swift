@@ -1,6 +1,6 @@
 import Foundation
 
-class Address: Decodable {
+class Address: Codable {
     var street: String
     var suite: String
     var city: String

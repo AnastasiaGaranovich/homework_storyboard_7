@@ -1,6 +1,5 @@
 import Foundation
 import Alamofire
-import AlamofireImage
 
 class Network {
     private static let rootUrl = "http://localhost:3000/"
@@ -112,6 +111,9 @@ class Network {
             case .success(let value):
                 do {
                     AppData.albums = try JSONDecoder().decode([Album].self, from: value)
+                    DispatchQueue.main.async {
+                        completion()
+                    }
                 }
                 catch let error {
                     print(error)
@@ -123,15 +125,55 @@ class Network {
     }
     
     static func getPhotos(_ completion: @escaping () -> ()) {
-        AF.request(photosUrl).responseData {
+        AF.request(photosUrl).responseDecodable(of: [Photo].self) {
             response in
             switch response.result {
-            case .success(let value):
-                do {
-                    AppData.photos = try JSONDecoder().decode([Photo].self, from: value)
+            case .success(let photos):
+                AppData.photos = photos
+                DispatchQueue.main.async {
+                    completion()
                 }
-                catch let error {
-                    print(error)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    static func editToDo(todo: ToDo, _  completion: @escaping () -> ()) {
+        AF.request(todosUrl + "/\(todo.id)", method: .put, parameters: todo, encoder: JSONParameterEncoder.default).response {
+            response in
+            switch response.result {
+            case .success(_):
+                DispatchQueue.main.async {
+                    completion()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    static func deleteToDo(todo: ToDo, _ completion: @escaping () -> ()) {
+        AF.request(todosUrl + "/\(todo.id)", method: .delete).response {
+            response in
+            switch response.result {
+            case .success(_):
+                DispatchQueue.main.async {
+                    completion()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    static func addPost(post: Post, _ completion: @escaping () -> ()) {
+        AF.request(postsUrl, method: .post, parameters: post, encoder: JSONParameterEncoder.default).response {
+            response in
+            switch response.result {
+            case .success(_):
+                DispatchQueue.main.async {
+                    completion()
                 }
             case .failure(let error):
                 print(error)
