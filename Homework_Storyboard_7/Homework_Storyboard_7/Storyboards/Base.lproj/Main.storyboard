@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="169.56521739130437" y="91.741071428571431"/>
         </scene>
-        <!--Users View Controller-->
+        <!--Users-->
         <scene sceneID="drq-gD-lgI">
             <objects>
-                <tableViewController storyboardIdentifier="UsersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KFJ-5d-ed8" customClass="UsersViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="UsersViewController" title="Users" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KFJ-5d-ed8" customClass="UsersViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7HN-cm-k1x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="897" y="92"/>
         </scene>
-        <!--User Info View Controller-->
+        <!--User Information-->
         <scene sceneID="xZ8-17-98q">
             <objects>
-                <viewController storyboardIdentifier="UserInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KpT-nD-fJD" customClass="UserInfoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserInfoViewController" title="User Information" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KpT-nD-fJD" customClass="UserInfoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oma-sa-SdE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

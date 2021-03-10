@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Albums View Controller-->
+        <!--Albums-->
         <scene sceneID="Bx8-4H-45U">
             <objects>
                 <tableViewController storyboardIdentifier="AlbumsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eBL-3G-ZcL" customClass="AlbumsViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,16 +31,16 @@
                             <outlet property="delegate" destination="eBL-3G-ZcL" id="M0M-Zj-FvC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1Na-2h-q5g"/>
+                    <navigationItem key="navigationItem" title="Albums" id="1Na-2h-q5g"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpB-SF-dY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58" y="29"/>
         </scene>
-        <!--Photos View Controller-->
+        <!--Photos-->
         <scene sceneID="7hV-0D-8bV">
             <objects>
-                <collectionViewController storyboardIdentifier="PhotosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ps1-BR-09y" customClass="PhotosViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="PhotosViewController" title="Photos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ps1-BR-09y" customClass="PhotosViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="evX-dV-EX4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

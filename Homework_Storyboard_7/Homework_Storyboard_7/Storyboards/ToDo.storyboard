@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To Do View Controller-->
+        <!--ToDo-->
         <scene sceneID="NNG-PY-QYz">
             <objects>
                 <tableViewController storyboardIdentifier="ToDoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3fL-0o-p52" customClass="ToDoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="3fL-0o-p52" id="HMR-Z7-Srr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="tnS-od-Nyc">
+                    <navigationItem key="navigationItem" title="ToDo" id="tnS-od-Nyc">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="vSj-fj-hBt">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="84" y="159"/>
         </scene>
-        <!--To Do Info View Controller-->
+        <!--To Do Details-->
         <scene sceneID="pdf-eH-JhG">
             <objects>
-                <viewController storyboardIdentifier="ToDoInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bz6-Ct-sVo" customClass="ToDoInfoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToDoInfoViewController" title="To Do Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bz6-Ct-sVo" customClass="ToDoInfoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oSA-8X-FlS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="792.75362318840587" y="459.375"/>
         </scene>
-        <!--Add To Do View Controller-->
+        <!--New To Do-->
         <scene sceneID="LbU-u8-UJx">
             <objects>
-                <viewController storyboardIdentifier="AddToDoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eYM-19-nIe" customClass="AddToDoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddToDoViewController" title="New To Do" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eYM-19-nIe" customClass="AddToDoViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUt-Qx-OUJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

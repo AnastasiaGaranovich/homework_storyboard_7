@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="1217" y="796"/>
         </scene>
-        <!--Posts View Controller-->
+        <!--Posts-->
         <scene sceneID="035-3b-OvI">
             <objects>
                 <tableViewController storyboardIdentifier="PostsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p2G-bV-Tf1" customClass="PostsViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="p2G-bV-Tf1" id="x4s-EI-VmY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0YK-v5-RhB">
+                    <navigationItem key="navigationItem" title="Posts" id="0YK-v5-RhB">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="g3A-FJ-0Uz">
                             <color key="tintColor" systemColor="labelColor"/>
                             <connections>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1935" y="796"/>
         </scene>
-        <!--Add Post View Controller-->
+        <!--New post-->
         <scene sceneID="0fm-Kr-Rxp">
             <objects>
-                <viewController storyboardIdentifier="AddPostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUS-mh-6mh" customClass="AddPostViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddPostViewController" title="New post" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUS-mh-6mh" customClass="AddPostViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ys0-ja-eRb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="2702.898550724638" y="438.61607142857139"/>
         </scene>
-        <!--Comments View Controller-->
+        <!--Comments-->
         <scene sceneID="DP8-O8-XIC">
             <objects>
-                <tableViewController storyboardIdentifier="CommentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kxO-is-UU6" customClass="CommentsViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CommentsViewController" title="Comments" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kxO-is-UU6" customClass="CommentsViewController" customModule="Homework_Storyboard_7" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yyU-3f-flg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
