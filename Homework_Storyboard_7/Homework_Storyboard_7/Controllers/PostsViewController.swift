@@ -10,7 +10,9 @@ class PostsViewController: UITableViewController {
     }
     
     @IBAction func addPostButtonPressed(_ sender: UIBarButtonItem) {
-        pushController(storyboard: "Post", name: "AddPostViewController")
+        let controller = getControllerFrom(storyboard: "Post", name: "AddPostViewController") as! AddPostViewController
+        controller.userId = userId
+        pushController(viewController: controller)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,5 +40,10 @@ class PostsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 165
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 }

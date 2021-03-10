@@ -2,7 +2,6 @@ import UIKit
 import Kingfisher
 
 class PhotosViewController: UICollectionViewController {
-    
     var photos: [Photo]!
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

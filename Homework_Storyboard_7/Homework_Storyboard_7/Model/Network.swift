@@ -168,10 +168,26 @@ class Network {
     }
     
     static func addPost(post: Post, _ completion: @escaping () -> ()) {
-        AF.request(postsUrl, method: .post, parameters: post, encoder: JSONParameterEncoder.default).response {
+        AF.request(postsUrl, method: .post, parameters: post, encoder: JSONParameterEncoder.default).responseDecodable(of: Post.self) {
             response in
             switch response.result {
-            case .success(_):
+            case .success(let serverPost):
+                post.id = serverPost.id
+                DispatchQueue.main.async {
+                    completion()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    static func addToDo(todo: ToDo, _ completion: @escaping () -> ()) {
+        AF.request(todosUrl, method: .post, parameters: todo, encoder: JSONParameterEncoder.default).responseDecodable(of: ToDo.self) {
+            response in
+            switch response.result {
+            case .success(let serverTodo):
+                todo.id = serverTodo.id
                 DispatchQueue.main.async {
                     completion()
                 }

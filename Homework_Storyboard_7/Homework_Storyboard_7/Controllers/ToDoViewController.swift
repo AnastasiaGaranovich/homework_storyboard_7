@@ -1,7 +1,6 @@
 import UIKit
 
 class ToDoViewController: UITableViewController {
-    
     var userId: Int!
     
     var todos: [ToDo] {
@@ -9,7 +8,7 @@ class ToDoViewController: UITableViewController {
             toDo.userId == userId
         }
     }
-        
+    
     var completedToDos: [ToDo] {
         todos.filter { toDo in
             return toDo.completed == true
@@ -20,6 +19,13 @@ class ToDoViewController: UITableViewController {
         todos.filter { toDo in
             return toDo.completed == false
         }
+    }
+    
+    @IBAction func addToDoButtonPressed(_ sender: UIBarButtonItem) {
+        let controller = getControllerFrom(storyboard: "ToDo", name: "AddToDoViewController") as! AddToDoViewController
+        controller.userId = userId
+        pushController(viewController: controller)
+        
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -38,12 +44,7 @@ class ToDoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath)
-        if indexPath.section == 1 {
-            cell.textLabel?.text = completedToDos[indexPath.row].title
-        }
-        else {
-            cell.textLabel?.text = currentToDos[indexPath.row].title
-        }
+        cell.textLabel?.text = todoForPath(indexPath).title
         return cell
     }
     
@@ -59,14 +60,32 @@ class ToDoViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = getControllerFrom(storyboard: "ToDo", name: "ToDoInfoViewController") as! ToDoInfoViewController
-        if indexPath.section == 0 {
-            controller.toDo = currentToDos[indexPath.row]
-        }
-        if indexPath.section == 1 {
-            controller.toDo = completedToDos[indexPath.row]
-        }
-        
+        controller.toDo = todoForPath(indexPath)
         pushController(viewController: controller)
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle != .delete) { return }
+
+        let deletingTodo = todoForPath(indexPath)
+        Network.deleteToDo(todo: deletingTodo) {
+            AppData.todos.removeAll { todo in
+                todo.id == deletingTodo.id
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    private func todoForPath(_ indexPath: IndexPath) -> ToDo {
+        if indexPath.section == 0 {
+            return currentToDos[indexPath.row]
+        }
+        else if indexPath.section == 1 {
+            return completedToDos[indexPath.row]
+        }
+        else {
+            fatalError("Invalid section index")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

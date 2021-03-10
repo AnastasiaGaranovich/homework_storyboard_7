@@ -148,6 +148,11 @@
                                 <state key="normal" title="Posts">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="postsButtonPressed:" destination="KpT-nD-fJD" eventType="touchUpInside" id="wek-q5-PSy"/>
                                 </connections>
@@ -164,6 +169,11 @@
                                 <state key="normal" title="Albums">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="albumsButtonPressed:" destination="KpT-nD-fJD" eventType="touchUpInside" id="8TM-uv-vu1"/>
                                 </connections>
@@ -174,6 +184,11 @@
                                 <state key="normal" title="ToDo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="toDoButtonPressed:" destination="KpT-nD-fJD" eventType="touchUpInside" id="XZY-0s-OrR"/>
                                 </connections>

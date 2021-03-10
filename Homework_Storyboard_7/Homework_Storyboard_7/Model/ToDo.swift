@@ -5,4 +5,11 @@ class ToDo: Codable {
     var id: Int
     var title: String
     var completed: Bool
+    
+    init(userId:Int, title:String) {
+        self.id = 0
+        self.completed = false
+        self.userId = userId
+        self.title = title
+    }
 }

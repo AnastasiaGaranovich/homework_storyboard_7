@@ -1,7 +1,6 @@
 import UIKit
 
 class AlbumsViewController: UITableViewController {
-    
     var albums: [Album]!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

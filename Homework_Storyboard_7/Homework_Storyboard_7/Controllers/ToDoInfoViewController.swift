@@ -22,7 +22,6 @@ class ToDoInfoViewController: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         toDoTextView.text = toDo.title
